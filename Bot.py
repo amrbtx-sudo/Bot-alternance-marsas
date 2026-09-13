@@ -44,7 +44,7 @@ def search_web(query):
         url,
         headers={"User-Agent": "Mozilla/5.0"},
         timeout=20,
-    )print(response.text)
+    )
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
