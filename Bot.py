@@ -100,7 +100,7 @@ def send_message(text):
         },
         timeout=20,
     )
-
+print(response.text)
     response.raise_for_status()
 
 
